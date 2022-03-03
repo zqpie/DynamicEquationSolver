@@ -14,7 +14,7 @@ t.speed(0)
 graphSize = 200
 
 #=================Gather Data
-print("please enter two points on a 2 demention graph:")  
+print("please enter two points on a 2 demention graph: (up to 40)")  
 x1 = float(input('x1: '))
 y1 = float(input('y1: '))
 x2 = float(input('x2: '))
@@ -44,7 +44,9 @@ if True: ## dynamic graphsizing
     graphSpaces = 30
   elif b >30 and b <= 40: ## thirdy through fourty
     graphSpaces = 40
-#graphSpaces = 10
+  else:
+    graphSpaces = 50
+#graphSpaces = int((round(b/10)*10) + 10)
 #========================================================== Draw Graph
 
 interval = graphSize / graphSpaces
